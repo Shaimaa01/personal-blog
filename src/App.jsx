@@ -1,13 +1,13 @@
-import './App.css'
+import "./App.css";
+import ThemeButton from "./components/ThemeButton";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
-
-
   return (
-    <>
-     <h1>hello000000000000000000000000000000000000 </h1>
-    </>
-  )
+    <ThemeProvider>
+      <ThemeButton />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
