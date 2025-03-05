@@ -1,5 +1,5 @@
-import MenuIcon from "./MenuIcon";
-import CloseIcon from "./CloseIcon";
+import MenuIcon from "../../../icons/MenuIcon";
+import CloseIcon from "../../../icons/CloseIcon";
 
 function HamburgerMenu({ isMenuOpen, toggleMenu }) {
   return (

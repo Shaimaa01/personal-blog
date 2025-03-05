@@ -6,6 +6,8 @@ import Blog from "./pages/Blog";
 import NewSettler from "./pages/NewSettler";
 import About from "./pages/About";
 import Header from "./components/header/Header";
+import ArticleDetail from "./pages/ArticleDetail";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/About" element={<About />} />
           <Route path="/Newsletter" element={<NewSettler />} />
+          <Route path="/article/:slug" element={<ArticleDetail />} />
         </Routes>
+        <Footer />
       </ThemeProvider>
     </Router>
   );

@@ -56,3 +56,48 @@
     font-weight: 100 900;
     font-style: normal;
 }
+
+.markdown {
+    @apply flex flex-col gap-[12px];
+}
+
+
+.markdown p , .markdown li  {
+    @apply text-Neutral-400 text-[18px] leading-[150%] tracking-[-0.2px];
+}
+
+.markdown h2 {
+    @apply text-Neutral-0 font-bold text-[28px] leading-[130%] tracking-[-0.5px];
+}
+
+.markdown hr {
+    @apply text-Neutral-700 my-[12px];
+}
+
+.markdown hr:first-of-type {
+    @apply my-[20px];
+}
+
+.markdown br {
+    @apply mt-[12px];
+}
+
+.markdown blockquote {
+    @apply border-l-[4px] border-Neutral-600 px-[12px] py-[6px] ;
+  }
+
+  .markdown blockquote p {
+    @apply text-Neutral-0;
+  }
+
+.markdown ol , .markdown ul{
+    @apply flex flex-col gap-[12px] list-decimal  ps-7;
+  }
+
+  .markdown ul {
+    @apply  list-disc  ;
+  }
+
+
+
+
