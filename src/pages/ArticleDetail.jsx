@@ -23,14 +23,14 @@ function ArticleDetail() {
   }, [article?.content]);
 
   return (
-    <main className="mx-[9px] px-[10px] pt-[48px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent font-DM">
+    <main className="mx-[9px] px-[10px] pt-[48px] max-lg:pt-[32px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
       <h1 className="text-Neutral-0  font-extrabold text-[40px] leading-[130%] tracking-[-1px]">
         {article?.title}
       </h1>
       <p className="py-[12px] text-Neutral-400 italic text-[16px] leading-[130%] tracking-[-0.2px]">
         Published {formatDate(article?.publishedAt)}
       </p>
-      <article className=" markdown prose prose-invert border-b dark:border-Neutral-700 pb-[48px]">
+      <article className=" markdown prose prose-invert border-b dark:border-Neutral-700 pb-[48px] max-lg:pb-[32px] max-sm:pb-[24px]">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}
