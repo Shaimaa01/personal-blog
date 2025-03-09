@@ -5,7 +5,7 @@ import GitHub from "../icons/GitHub";
 
 function Footer() {
   return (
-    <footer className=" mx-[9px] px-[9px] -mt-[1px]  flex justify-between items-center pb-[32px] max-lg:pb-[20px] max-sm:pb-[16px] pt-[17px]  text-Neutral-400 border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
+    <footer className=" mx-[9px] px-[10px] -mt-[1px]  flex justify-between items-center pb-[32px] max-lg:pb-[20px] max-sm:pb-[16px] pt-[17px]  text-Neutral-400 border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
       <p className=" text-[16px] leading-[130%] tracking-[-0.2px]">
         Made with ❤️ and ☕️
       </p>

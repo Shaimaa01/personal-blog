@@ -12,7 +12,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <main className="mx-[9px] px-[9px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent font-DM">
+    <main className="mx-[9px] px-[10px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
       <section className="py-[48px] max-lg:py-[32px] flex flex-col gap-[24px] border-b dark:border-Neutral-700">
         <h1 className="text-Neutral-0 font-extrabold text-[32px] leading-[130%] tracking-[-0.5px] relative w-fit z-50">
           Hi, I&rsquo;m Paulina 👋

@@ -23,7 +23,7 @@ function ArticleDetail() {
   }, [article?.content]);
 
   return (
-    <main className="mx-[9px] px-[9px] pt-[48px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent font-DM">
+    <main className="mx-[9px] px-[10px] pt-[48px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent font-DM">
       <h1 className="text-Neutral-0  font-extrabold text-[40px] leading-[130%] tracking-[-1px]">
         {article?.title}
       </h1>
@@ -37,7 +37,7 @@ function ArticleDetail() {
           components={{
             br: () => <span className="block " />,
             table: ({ ...props }) => (
-              <div className="overflow-hidden rounded-[8px]  border border-Neutral-700">
+              <div className="overflow-x-auto rounded-[8px]  border border-Neutral-700">
                 <table {...props} />
               </div>
             ),

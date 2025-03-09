@@ -1,5 +1,5 @@
 .markdown table {
-    @apply border-collapse;
+    @apply border-collapse  ;
 }
 
 .markdown table th,
