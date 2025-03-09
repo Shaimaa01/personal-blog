@@ -27,7 +27,7 @@ function Navbar({ isMenuOpen }) {
       {isMenuOpen && (
         /* mobile */
         <nav
-          className="absolute sm:hidden flex flex-col w-full left-0 top-[calc(100%+12px)] bg-Neutral-0 dark:bg-Neutral-800 shadow-[0px_8px_15px_0px_rgba(8,6,25,0.06)] 
+          className="absolute z-100 sm:hidden flex flex-col w-full left-0 top-[calc(100%+12px)] bg-Neutral-0 dark:bg-Neutral-800 shadow-[0px_8px_15px_0px_rgba(8,6,25,0.06)] 
         border border-Neutral-200 dark:border-Neutral-700 rounded-[10px] p-[12px] 
          gap-[6px]   font-DM font-medium text-[18px] leading-[150%] tracking-[-0.5px]  "
         >

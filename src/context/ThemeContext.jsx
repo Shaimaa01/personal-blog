@@ -32,9 +32,9 @@ export function ThemeProvider({ children }) {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, themeIcon }}>
-      <div className="bg-Neutral-0 dark:bg-Neutral-900 pt-[20px]  px-[400px] relative overflow-hidden">
-      <img src={pattern} alt="background pattern in left  " className="absolute left-[-212px] top-[227px]" />
-      <img src={pattern} alt="background pattern in right " className="absolute right-[-212px] top-0" />
+      <div className="bg-Neutral-0 dark:bg-Neutral-900 pt-[20px] max-sm:pt-[16px]   px-[max(0px,calc((100%-640px)/2))] max-sm:px-[16px]  relative overflow-hidden">
+      <img src={pattern} alt="background pattern in left  " className="absolute left-[-212px] top-[227px] max-lg:hidden" />
+      <img src={pattern} alt="background pattern in right " className="absolute right-[-212px] top-0 max-lg:hidden" />
         {children}
       </div>
     </ThemeContext.Provider>

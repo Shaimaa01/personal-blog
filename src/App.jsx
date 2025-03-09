@@ -1,4 +1,3 @@
-import "./App.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";

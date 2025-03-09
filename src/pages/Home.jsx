@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <main className="mx-[9px] px-[9px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent font-DM">
-      <section className="py-[48px]  flex flex-col gap-[24px] border-b dark:border-Neutral-700">
+      <section className="py-[48px] max-lg:py-[32px] flex flex-col gap-[24px] border-b dark:border-Neutral-700">
         <h1 className="text-Neutral-0 font-extrabold text-[32px] leading-[130%] tracking-[-0.5px] relative w-fit z-50">
           Hi, I&rsquo;m Paulina 👋
           <span className="w-full h-[8px] bg-Blue-700 absolute bottom-[2px] left-0 -z-1"></span>
@@ -33,7 +33,7 @@ function Home() {
         </p>
         <SocialLinks />
       </section>
-      <section className="py-[48px] flex flex-col gap-[32px] border-b dark:border-Neutral-700">
+      <section className="py-[48px] max-lg:py-[32px]  flex flex-col gap-[32px] border-b dark:border-Neutral-700">
         <h2 className="text-Neutral-0 font-extrabold text-[32px] leading-[130%] tracking-[-0.5px]">
           Latest Articles
           <span className="w-[40px] h-[3px] bg-Blue-700 inline-block ml-2"></span>
