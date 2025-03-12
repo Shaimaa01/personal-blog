@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import workspaceLarge from "/public/assets/images/image-workspace-large.jpg";
-import workspaceSmall from "/public/assets/images/image-workspace-small.jpg";
+import workspaceLarge from "/assets/images/image-workspace-large.jpg";
+import workspaceSmall from "/assets/images/image-workspace-small.jpg";
 import SocialLinks from "../components/SocialLinks";
 function About() {
   const [workspaceImage, setWorkSpaceImage] = useState();
