@@ -23,13 +23,13 @@ function About() {
   }, []);
 
   return (
-    <main className="mx-[9px] px-[10px]   border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
-      <div className="flex flex-col gap-[24px] border-b dark:border-Neutral-700 py-[48px] max-lg:py-[32px] max-sm:pb-[24px]">
-        <h1 className="text-Neutral-0 font-extrabold text-[32px] leading-[130%] tracking-[-0.5px] relative w-fit z-50">
+    <main className="mx-[9px] px-[10px] border border-Neutral-200  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
+      <div className="flex flex-col gap-[24px] border-b border-Neutral-200 dark:border-Neutral-700 py-[48px] max-lg:py-[32px] max-sm:pb-[24px]">
+        <h1 className="text-Neutral-700 dark:text-Neutral-0  font-extrabold text-[32px] leading-[130%] tracking-[-0.5px] relative w-fit z-50">
           About Me
-          <span className="w-full h-[8px] bg-Blue-700 absolute bottom-[5px] left-0 -z-1"></span>
+          <span className="w-full h-[8px] bg-Blue-500 dark:bg-Blue-700 absolute bottom-[5px] left-0 -z-1"></span>
         </h1>
-        <section className="flex flex-col gap-[24px] text-Neutral-400 text-[18px] leading-[150%] tracking-[-0.2px]">
+        <section className="flex flex-col gap-[24px] text-Neutral-600 dark:text-Neutral-400 text-[18px] leading-[150%] tracking-[-0.2px]">
           <p>
             Hi, I’m Paulina! Ever since I can remember, I’ve had a passion for
             creativity and problem-solving. That’s what led me to the world of
@@ -54,14 +54,19 @@ function About() {
           <p>Some of my favorite books:</p>
           <ul className="list-disc ps-7">
             <li>
-              “The Pragmatic Programmer” by Andrew Hunt and David Thomas (for
-              helpful insights into software development)
+              <b>“The Pragmatic Programmer” </b>by Andrew Hunt and David Thomas
+              (for helpful insights into software development)
             </li>
             <li>
-              “Ready Player One” by Ernest Cline (for some futuristic escapism)
+              <b>“Ready Player One”</b>by Ernest Cline (for some futuristic
+              escapism)
             </li>
-            <li> “The Hobbit” by J.R.R. Tolkien (for a bit of fantasy fun)</li>
-            <li> “Educated” by Tara Westover (for incredible inspiration)</li>
+            <li>
+              <b>“The Hobbit”</b>by J.R.R. Tolkien (for a bit of fantasy fun)
+            </li>
+            <li>
+              <b>“Educated”</b> by Tara Westover (for incredible inspiration)
+            </li>
           </ul>
           <p>
             I absolutely love my workspace as a place that inspires me to do my
@@ -79,7 +84,7 @@ function About() {
           </p>
         </section>
         <section className="flex flex-col gap-[16px]">
-          <h2 className="text-Neutral-0 font-semibold text-[24px] leading-[130%] tracking-[-0.5px]">
+          <h2 className="text-Neutral-700 dark:text-Neutral-0  font-semibold text-[24px] leading-[130%] tracking-[-0.5px]">
             Follow me
           </h2>
           <SocialLinks />

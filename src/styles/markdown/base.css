@@ -4,13 +4,13 @@
 
 .markdown p,
 .markdown li {
-    @apply text-Neutral-400 text-[18px] leading-[150%] tracking-[-0.2px];
+    @apply text-Neutral-600 dark:text-Neutral-400 text-[18px] leading-[150%] tracking-[-0.2px];
 }
 
 .markdown h2,
 .markdown h3,
 .markdown h4 {
-    @apply text-Neutral-0 font-bold text-[28px] leading-[130%] tracking-[-0.5px];
+    @apply text-Neutral-700 dark:text-Neutral-0 font-bold text-[28px] leading-[130%] tracking-[-0.5px];
 }
 
 .markdown h3 {
@@ -26,15 +26,15 @@
 }
 
 .markdown hr {
-    @apply text-Neutral-700 my-[12px];
+    @apply border-Neutral-200 dark:border-Neutral-700  my-[12px];
 }
 
 .markdown hr:first-of-type {
-    @apply my-[20px];
+    @apply my-[20px] ;
 }
 
 .markdown br {
-    @apply mt-[12px];
+    @apply mt-[12px] ;
 }
 
 /* list */

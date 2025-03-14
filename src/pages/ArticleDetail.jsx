@@ -23,21 +23,21 @@ function ArticleDetail() {
   }, [article?.content]);
 
   return (
-    <main className="mx-[9px] px-[10px] pt-[48px] max-lg:pt-[32px] border  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
-      <h1 className="text-Neutral-0  font-extrabold text-[40px] leading-[130%] tracking-[-1px]">
+    <main className="mx-[9px] px-[10px] pt-[48px] max-lg:pt-[32px] border border-Neutral-200  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
+      <h1 className="text-Neutral-700 dark:text-Neutral-0   font-extrabold text-[40px] leading-[130%] tracking-[-1px]">
         {article?.title}
       </h1>
-      <p className="py-[12px] text-Neutral-400 italic text-[16px] leading-[130%] tracking-[-0.2px]">
+      <p className="py-[12px] text-Neutral-600 dark:text-Neutral-400 italic text-[16px] leading-[130%] tracking-[-0.2px]">
         Published {formatDate(article?.publishedAt)}
       </p>
-      <article className=" markdown prose prose-invert border-b dark:border-Neutral-700 pb-[48px] max-lg:pb-[32px] max-sm:pb-[24px]">
+      <article className=" markdown prose prose-invert border-b border-Neutral-200 dark:border-Neutral-700 pb-[48px] max-lg:pb-[32px] max-sm:pb-[24px]">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}
           components={{
-            br: () => <span className="block " />,
+            br: () => <span className="block border-Neutral-200 dark:border-Neutral-700" />,
             table: ({ ...props }) => (
-              <div className="overflow-x-auto rounded-[8px]  border border-Neutral-700">
+              <div className="overflow-x-auto rounded-[8px]  border border-Neutral-200 dark:border-Neutral-700">
                 <table {...props} />
               </div>
             ),
