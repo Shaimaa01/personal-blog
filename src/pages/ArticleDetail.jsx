@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function ArticleDetail() {
   const { slug } = useParams();
   const data = useFetchData();
-  const article = data.find((item) => item.slug === slug);
+  const article = data?.find((item) => item.slug === slug);
 
   useEffect(() => {
   

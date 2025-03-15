@@ -20,7 +20,7 @@ function Blog() {
           </p>
         </section>
         {/* articles */}
-        {data.map((item) => (
+        {data?.map((item) => (
           <article
             onClick={() => navigate(`/article/${item.slug}`)}
             key={item.slug}
