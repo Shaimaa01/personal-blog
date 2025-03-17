@@ -1,13 +1,14 @@
-import useFetchData from "../hooks/useFetchData";
 import { formatDate } from "../utils/formatDate";
 import { useNavigate } from "react-router-dom";
+import data from "../data.json";
 
 function Blog() {
-  const data = useFetchData();
   const navigate = useNavigate();
 
+ 
+
   return (
-    <main className="mx-[9px] px-[10px]  border border-Neutral-200  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent">
+    <main className="flex-1 mx-[9px] px-[10px]  border border-Neutral-200  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent">
       <div className="border-b border-Neutral-200 dark:border-Neutral-700 py-[48px] max-lg:py-[32px]">
         <section className="pb-[24px] border-b border-Neutral-200 dark:border-Neutral-700">
           <h1 className="text-Neutral-700 dark:text-Neutral-0 font-extrabold text-[32px] leading-[130%] tracking-[-0.5px]">
@@ -20,7 +21,7 @@ function Blog() {
           </p>
         </section>
         {/* articles */}
-        {data?.map((item) => (
+        {data.map((item) => (
           <article
             onClick={() => navigate(`/article/${item.slug}`)}
             key={item.slug}

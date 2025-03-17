@@ -32,7 +32,7 @@ export function ThemeProvider({ children }) {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, themeIcon }}>
-      <div className="min-h-screen   transition-all duration-300 bg-Neutral-100 dark:bg-Neutral-900 pt-[20px] max-sm:pt-[16px]   px-[max(0px,calc((100%-640px)/2))] max-sm:px-[16px]  relative overflow-hidden">
+      <div className="min-h-screen flex flex-col   transition-all duration-300 bg-Neutral-100 dark:bg-Neutral-900 pt-[20px] max-sm:pt-[16px]   px-[max(0px,calc((100%-640px)/2))] max-sm:px-[16px]  relative overflow-hidden">
         <img
           src={pattern}
           alt="background pattern in left  "

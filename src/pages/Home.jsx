@@ -1,18 +1,17 @@
 import SocialLinks from "../components/SocialLinks";
-import useFetchData from "../hooks/useFetchData";
+import data from "../data.json";
 import { formatDate } from "../utils/formatDate";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [showAll, setShowAll] = useState(false);
-  const data = useFetchData();
   const shortData = data.slice(0, 5);
   const displayData = showAll ? data : shortData;
   const navigate = useNavigate();
 
   return (
-    <main className="mx-[9px] px-[10px]  border border-Neutral-200  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
+    <main className="flex-1 mx-[9px] px-[10px]  border border-Neutral-200  dark:border-Neutral-700 border-y-transparent dark:border-y-transparent ">
       <section className="py-[48px] max-lg:py-[32px] flex flex-col gap-[24px] border-b dark:border-Neutral-700 border-Neutral-200">
         <h1 className="text-Neutral-700 dark:text-Neutral-0 font-extrabold text-[32px] leading-[130%] tracking-[-0.5px] relative w-fit z-5">
           Hi, I&rsquo;m Paulina 👋
